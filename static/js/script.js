@@ -1,9 +1,13 @@
-//message to console log
+// vars
+const CFirstname = "Martin";
+const CLastname = "Wallin";
+
+// message to console log
 console.log("JavaScript is up and running");
 
-//Get element id of one page with id="creator"
-//document.getElementById("creator").innerText = "Martin";
-
+//Select all #ID and .class for loop elemnt text varibels first and last name.
 document.querySelectorAll(".creator, #creator").forEach(el => {
-    el.textContent = "Martin";
+    el.textContent = `${CFirstname} ${CLastname}`;
 })
+// add text to "id="creator
+document.getElementById("creator").textContent = `This page was created by ${CFirstname} ${CLastname}`
